@@ -1,0 +1,49 @@
+@import '~antd/lib/style/themes/default.less';
+:global {
+  .ant-modal-wrap {
+    z-index: 1031;
+  }
+  .ant-modal-mask {
+    z-index: 1031;
+  }
+}
+
+.circlContent {
+  width: 46px;
+  text-align: center;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  float: left;
+  .iconfont {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: @primary-color;
+    color: #fff;
+    position: relative;
+    .close {
+      width: 16px;
+      height: 16px;
+      background: #969696;
+      border: dashed 1px #969696;
+      border-radius: 50%;
+      position: absolute;
+      right: -3px;
+      cursor: pointer;
+    }
+  }
+  .children {
+    font-size: @font-size-sm;
+  }
+}
+
+.dashed {
+  background-color: #fff;
+  border: dashed 1px #969696;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}

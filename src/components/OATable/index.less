@@ -1,0 +1,55 @@
+@import "~antd/lib/style/themes/default.less";
+.filterTable {
+  .filterTableOperator {
+    margin-bottom: 10px;
+    >* {
+      margin-right: 8px;
+    }
+  }
+  :global {
+    .ant-table-search-highlight {
+      color: #f50;
+    }
+    .ant-table {
+      th {
+        white-space: nowrap;
+      }
+    }
+    .ant-table-small {
+      border: none;
+    }
+    .ant-table-small>.ant-table-content>.ant-table-header>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-body>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-scroll>.ant-table-header>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-scroll>.ant-table-body>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-fixed-left>.ant-table-header>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-fixed-right>.ant-table-header>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-fixed-left>.ant-table-body-outer>.ant-table-body-inner>table>.ant-table-thead>tr>th,
+    .ant-table-small>.ant-table-content>.ant-table-fixed-right>.ant-table-body-outer>.ant-table-body-inner>table>.ant-table-thead>tr>th {
+      background: #fafafa;
+    }
+    .ant-table-footer {
+      text-align: right;
+    }
+    .ant-table-tree-filter {
+      .scroll-bar {
+        max-height: 300px;
+        overflow-y: scroll;
+      }
+      .table-filter-title {
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+        min-height: 30px;
+        line-height: 30px;
+        span {
+          margin-top: -4px;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}
+
+.table-filter-active {
+  color: @primary-color  !important;
+}

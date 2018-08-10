@@ -1,0 +1,48 @@
+@import "~antd/lib/style/themes/default.less";
+
+.OAForm {
+  .OAFormOperator {
+    text-align: right;
+    font-size: @font-size-sm;
+    padding: 1px 3px;
+    opacity: 0;
+    user-select: none;
+    > * {
+      margin-left: 10px;
+    }
+    i {
+      cursor: pointer;
+      transition: all .3s;
+    }
+  }
+  .listBox {
+    .buttonGroup {
+      margin-top: 10px;
+    }
+    .listGroup {
+      border-bottom: 1px solid #eee;
+      padding-top: 20px;
+      padding-right: 35px;
+      position: relative;
+      .deleteButton {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -16px;
+      }
+    }
+    .listGroup:first-child {
+      margin-top: 10px;
+      //border-top: 1px solid #eee;
+    }
+  }
+}
+
+.OAForm:hover {
+  .OAFormOperator {
+    opacity: 1;
+    i:hover {
+      transform: scale(1.2);
+    }
+  }
+}

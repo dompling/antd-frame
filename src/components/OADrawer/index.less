@@ -1,0 +1,35 @@
+@import '~antd/lib/style/themes/default.less';
+:global {
+  .ant-drawer-content {
+    box-shadow: @box-shadow-base;
+    .ant-drawer-header {
+      position: absolute;
+      padding: 0;
+      top: 0;
+      left: 0px;
+      right: 0px;
+      z-index: 1;
+      border: none;
+      .titleContent {
+        border-bottom: 1px solid #c7c7c7;
+        height: 50px;
+        margin: 0 20px;
+      }
+    }
+    .ant-drawer-body {
+      padding: 69px 0 0 0;
+      margin: 0 20px;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #c7c7c7;
+  height: 50px;
+  text-align: right;
+  background: #fff;
+}
